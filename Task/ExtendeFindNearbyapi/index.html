@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Findnearby</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+	
+		
+
+	</head>
+
+	<body>
+		<select id="setLatitude">
+			<option>0</option>
+			<option>48.69096</option>
+			<option >47.25</option>
+			<option>47.00016</option>
+			
+		</select>
+
+		<select id="setLongitude">
+			<option>0</option>
+			<option >9.14062</option>
+			<option >9.25</option>
+			<option >8.01427</option>
+			
+		</select>
+
+		<button id="btnRun">Run</button>
+
+		<br><br>
+
+		<div id="divResults">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+
+						ToponymName: 
+					</td>
+					<td id="topnymName">
+						
+					</td>
+
+				</tr>
+
+				
+
+				<tr>
+					<td align="right">
+						geonameId
+					</td>
+					<td id="txtGeonameId">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						fcode:
+					</td>
+					<td id="txtfcode">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						fcl: 
+					</td>
+					<td id="txtfcl">
+						
+					</td>
+
+				</tr>
+
+
+			</table>
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
