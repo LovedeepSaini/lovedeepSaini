@@ -1,0 +1,271 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Paddy Evans">
+		<link rel="stylesheet" href="libs/css/styles.css">
+
+	</head>
+
+	<body>
+		<table id="table1" >
+            <thead>
+              <tr>
+                <th scope="col">API Name</th>
+                <th scope="col">API description</th>
+                <th scope="col">Submit</th>
+				<th scope="col">Result</th>
+                
+                
+              </tr>
+            </thead>
+			<tbody>
+		<tr>
+		<td>Weather Station with most recent weather observation</td>
+		<td><h4>Parameters :
+			lat,lng : the service will return the Weather of station closest to this given point </h4>
+			Latitude:<select id="latitude">
+			<option >43</option>
+			<option>48.8</option>
+			<option>53.2</option>
+			<option>-33.3</option>
+			
+		</select>
+		Longitude:<select id="longitude">
+			<option>-2</option>
+			<option>2.85</option>
+			<option>-2.6</option>
+			<option>27.2</option>
+			
+		</select></td>
+		
+		
+			
+	
+		<td><button id="btnRun">Run</button></td>
+		
+
+		<td>
+
+		<div id="divResults">
+			
+			<table id="table2">
+
+				<tr>
+					<td align="right">
+						clouds: 
+					</td>
+					<td id="txtclouds">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						temperature: 
+					</td>
+					<td id="txttemperature">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						Humidity: 
+					</td>
+					<td id="txthumidity">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						windspeed: 
+					</td>
+					<td id="txtwindspeed">
+						
+					</td>
+
+				</tr>
+
+				
+
+
+			</table>
+
+		</div>
+		</td>
+		</tr>
+		<tr>
+			<td>Find nearby populated place</td>
+			<td><h4>Parameters : lat,lng,
+				. Returns the closest populated place</h4>
+				Latitude:<select id="latitude1">
+				<option >47.3</option>
+				<option>42.3</option>
+				<option>52.3</option>
+				<option >73.4</option>
+			</select>
+			Longitude:<select id="longitude1">
+				<option >9</option>
+				<option>2.3</option>
+				<option>-9.8</option>
+				<option >-55.8</option>
+			</select>
+			
+			
+			</td>
+			
+			
+				
+		
+			<td><button id="btnRun1">Run</button></td>
+			
+	
+		<td>
+				<div id="divResults1">
+			
+					<table id="table3">
+		
+						<tr>
+							<td align="right">
+								name :
+							</td>
+							<td id="txtname">
+								
+							</td>
+		
+						</tr>
+		
+						<tr>
+							<td align="right">
+								latitude: 
+							</td>
+							<td id="txtlatitude">
+								
+							</td>
+		
+						</tr>
+						<tr>
+							<td align="right">
+								longitude: 
+							</td>
+							<td id="txtlongitude">
+								
+							</td>
+		
+						</tr>
+		
+						<tr>
+							<td align="right">
+								fcode
+							</td>
+							<td id="txtfcode">
+								
+							</td>
+		
+						</tr>
+						</table>
+						</div>
+						
+			
+			</td>
+			</tr>
+			<tr>
+				<td>Wikipedia Fulltext Search</td>
+				<td><h4>Parameters : q : place name,Max number of rows.
+					Returns the wikipedia entries .
+				</h4>q:	<select id="place1">
+					<option>London</option>
+					<option>France</option>
+					<option>Paris</option>
+					<option>India</option>
+					
+					
+				</select>
+				
+				maxRows:<select id="maxrows">
+					<option>10</option>
+					<option>7</option>
+					
+					
+				</select>
+				</td>
+				
+				
+					
+			
+				<td><button id="btnRun2">Run</button></td>
+				
+		
+			<td>
+					<div id="divResults2">
+				
+						<table id="table4">
+			
+							
+							<tr>
+								<td align="right">
+									latitude: 
+								</td>
+								<td id="txtlatitude2">
+									
+								</td>
+			
+							</tr>
+							<tr>
+								<td align="right">
+									longitude: 
+								</td>
+								<td id="txtlongitude2">
+									
+								</td>
+			
+							</tr>
+			
+							<tr>
+								<td align="right">
+									wikipediaUrl:
+								</td>
+								<td id="txtwikipediaurl">
+									
+								</td>
+								</tr>
+								<tr>
+									<td align="right">
+										elevation:
+									</td>
+									<td id="txtelevation">
+										
+									</td>
+									</tr>
+				
+			
+							
+							</table>
+							</div>
+							
+				
+				</td>
+				</tr>
+
+		</tbody>
+		</table>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script1.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+		<script type="application/javascript" src="libs/js/script2.js"></script>
+
+		
+
+	</body>
+
+</html>
