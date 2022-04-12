@@ -1,0 +1,209 @@
+
+table {
+    border-collapse: collapse;
+    background-color: #d4e9e9;
+    text-align: center;
+    margin:1%;
+    width: 100%;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    background-color: #3b7767;
+    color:aliceblue;
+    text-align: center;
+}
+
+
+td{
+    width:1%;
+   
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #6c72eb;
+    border-color: #beadd7;
+}
+
+div.buttons{
+    margin-left:40%;
+    margin-top: 1%;
+}
+.navbar {
+    background-color: #376e6c;
+    color: #efefd0;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #3b7767;
+    color:aliceblue;
+}
+.input-group-prepend {
+    margin-right: -1px;
+    width: 15%;
+}
+span.myspan {
+    background-color: #3b7767;
+    color:aliceblue;
+  }
+  .input-group-prepend {
+    margin-right: -1px;
+    margin: 10px;
+    margin-left: 22%;
+}
+.title{
+    margin-left:5%;
+}
+#deptm.form-control{
+    background-color: #d0dfde;
+    width: 200px;
+}
+#loca.form-control{
+    background-color: #d0dfde;
+    width: 200px;
+}
+#searchid.col-sm-1.col-md-7{
+    background-color: #d0dfde;
+}
+#remove-button {
+    display: none;
+}
+
+#advancedRow {
+    display: none;
+    margin-left: 0px;
+ 
+}
+
+@media only screen and (max-width: 1025px) {
+    table {
+        border-collapse: collapse;
+        background-color: #d4e9e9;
+        text-align: center;
+        margin:1%;
+        width: 100%;
+    }
+    .tableFixHead {
+        overflow-y: auto;
+        height: 500px;
+        background-color: whitesmoke;
+    }
+    .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+        background-color: #3b7767;
+        color:aliceblue;
+        text-align: center;
+    }
+    
+    
+    td{
+        width:1%;
+       
+    }
+    
+    
+    .btn-success {
+        color: #fff;
+        background-color: #6c72eb;
+        border-color: #beadd7;
+    }
+    
+    div.buttons{
+        margin-left:40%;
+        margin-top: 1%;
+    }
+    .navbar {
+        background-color: #376e6c;
+        color: #efefd0;
+        justify-content: center;
+    }
+    
+    .btn{
+        background-color: #3b7767;
+        color:aliceblue;
+    }
+    .input-group-prepend {
+        margin-right: -1px;
+        width: 15%;
+    }
+    span.myspan {
+        background-color: #3b7767;
+        color:aliceblue;
+      }
+      .input-group-prepend {
+        margin-right: -1px;
+        margin: 10px;
+        margin-left: 22%;
+    }
+    .title{
+        margin-left:38%;
+    }
+    #deptm.form-control{
+        background-color: #d0dfde;
+        width: 50px;
+    }
+    #loca.form-control{
+        background-color: #d0dfde;
+        width: 50px;
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 0.55em;
+    }
+    table {
+        border-collapse: collapse;
+        background-color: #d4e9e9;
+        text-align: center;
+        margin:1%;
+        width: 50%;
+    }
+    .tableFixHead {
+       overflow-y: auto;
+        height: 700px;
+        
+        background-color: whitesmoke;
+    }
+    .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+        background-color: #3b7767;
+        color:aliceblue;
+        text-align: center;
+    }
+    .title{
+        margin-left:25%;
+    }
+    div.buttons{
+        margin-left:30%;
+        margin-top: 1%;
+    }
+    .input-group-prepend {
+        margin-right: -1px;
+        margin: 10px;
+        margin-left: 12%;
+    }
+    #deptm.form-control{
+        background-color: #d0dfde;
+        width: 45px;
+    }
+    #loca.form-control{
+        background-color: #d0dfde;
+        width: 45px;
+    }
+}
