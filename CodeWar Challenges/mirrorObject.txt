@@ -1,0 +1,7 @@
+const mirror = obj => {
+  let newObj={};
+for(let i in obj){
+  newObj[i]=i.split('').reverse().join('')
+}
+return newObj
+}

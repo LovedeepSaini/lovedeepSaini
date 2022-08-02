@@ -1,0 +1,29 @@
+function myFunction(str){
+const arr=str.split('');
+arr.reverse();
+arr.join();
+
+return arr
+}
+function myFunction(str){
+let reversed=' ';
+for (let character of str){
+reversed=character+reversed;
+}
+return reversed;
+}
+
+function myFunction(str){
+return str.split('').reduce((reversed,character)=>reversed+character,'');
+}
+function palidrome(str){
+let reversed=' ';
+for (let character of str){
+reversed=character+reversed;
+}
+if(str === reversed){
+return true
+}else{
+return false
+}
+}

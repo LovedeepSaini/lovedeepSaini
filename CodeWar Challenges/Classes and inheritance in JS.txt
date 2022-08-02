@@ -1,0 +1,55 @@
+// Write a class “Person”, constructed with a name, surname, and age.
+
+class Person {
+	constructor(name, surname, age){	
+		this.name=name;
+		this.surname=surname;
+		this.age=age;
+}
+/* Implement an instance method “getDescription” for “Person” which
+returns the name, surname and age of the person as one string. e.g. "John
+Smith, 47" */
+		getDescription(){
+			return this.name+this.surname+ ", "+this.age;
+
+}
+}
+
+/* Write a subclass “Teacher” of “Person” which is additionally constructed with a list of subject names that they teach. */
+
+class Teacher extends Person{
+	constructor(name, surname, age, sublist){
+		super(name, surname, age);
+		this.sublist=sublist;
+}
+/*Override “getDescription” on “Teacher” so that it returns the same as “Person”, plus the list of subjects, all as one string. e.g. "Margaret Brown, 32: Physics, Biology, Chemistry" */
+
+		getDescription(){
+			return super.getDescription()+":"+this.sublist;
+}
+
+
+/* Implement a static method “getSharedSubjects” for “Teacher” which
+takes two teachers and returns a list of all subjects that they share. 
+e.g. ["English", "History"] */
+
+static getSharedSubjects(Teacher1,Teacher2){
+  let t1= Teacher1.sublist; 
+  let t2=Teacher2.sublist;
+      t1=t1.split(','); 
+      t2=t2.split(',')
+  let common=[];
+  for(let i=0;i<t1.length;i++){
+    for(let j=0;j<t2.length;j++){
+      if(t1[i]==t2[j]){
+        common.push(t2[j]);
+      }
+    }
+  }
+  return common 
+
+}
+    
+}
+
+

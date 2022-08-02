@@ -1,0 +1,9 @@
+function maps(x){
+  let b=[];
+  for(let i=0;i<x.length;i++){
+   let a= x[i]*2
+   b.push(a)
+  }
+  return b 
+
+}

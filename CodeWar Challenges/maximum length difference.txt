@@ -1,0 +1,22 @@
+function mxdiflg(a1, a2) {
+  if(a1.length===0 || a2.length===0){
+    return -1;
+  }
+    // your code
+  let newa1=[];
+  let newa2=[];
+  for(let i=0;i<a1.length;i++){
+    newa1.push(a1[i].length)
+}
+     
+   
+    for(let j=0;j<a2.length;j++){
+      newa2.push(a2[j].length)
+      
+  }
+  let a=Math.max(...newa1)-Math.min(...newa2)
+  let b= Math.max(...newa2)-Math.min(...newa1)
+  return Math.max(a,b)
+    
+  
+}

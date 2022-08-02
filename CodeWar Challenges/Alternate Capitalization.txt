@@ -1,0 +1,41 @@
+function capitalize(s){
+  let result=[];
+  let result1=[];
+  let result2=[];
+   s=s.toLowerCase();
+ s=s.split('')
+ 
+  for(let i=0;i<s.length;i++){
+  
+  
+    if( i%2===0 ){
+     
+     let a= s[i].toUpperCase();
+     result1.push(a);
+      
+    
+    
+    }else {
+      let b=s[i].toLowerCase();
+      result1.push(b)
+    }
+    
+    
+  
+    if( i%2!==0 ){
+      
+     let a= s[i].toUpperCase();
+     result2.push(a);
+    }else {
+      let b=s[i].toLowerCase();
+      result2.push(b)
+    }
+   
+    }
+  
+  
+  result.push (result1.join('') )
+  result.push(result2.join(''))
+  return result;
+  
+};

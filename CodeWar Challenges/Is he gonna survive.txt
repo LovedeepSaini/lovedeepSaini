@@ -1,0 +1,7 @@
+function hero(bullets, dragons){
+  if(2*dragons>bullets){
+    return false
+  }
+  return true
+//Get Coding!
+}

@@ -1,0 +1,14 @@
+//array chunks
+
+function arrayChunk(array, size){
+let chunks=[];
+for (let element of array){
+let last=chunks[chunks.length-1;
+if(!last || last.length === size){
+chunked.push([element])
+}else{
+last.push(element)
+}
+}
+return chunks
+}

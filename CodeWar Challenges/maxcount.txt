@@ -1,0 +1,26 @@
+function reverseInt(n){
+	const reversed=n.toString().split('').reverse().join('');
+	return parseInt(reversed)*Math.sign(n);
+}
+function maxChar(str){
+let Chars={};
+let max=0;
+let maxChar='';
+for(let char of str){
+if(chars[char]){
+Chars[char]=Chars[char]+1
+}else{
+Chars[char]=1;
+}
+}
+
+for(let char in Chars){
+if(Chars[char]>max){
+max=Chars[char];
+maxChar=char;
+}
+}
+return maxChar;
+}
+
+

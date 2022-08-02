@@ -1,0 +1,20 @@
+function repeatStr(str){
+let arr=str.split(' ')
+let count =0;
+let word="-1";
+for(let i=0;i<=arr.length;i++){
+for(let j=0;j<arr[i].length;j++){
+let counter=0;
+for(let k=j+1;j<arr[i].length;k++){
+if(str[i][j] ===str[i][k]){
+counter+=1;
+}
+if(countNew>count){
+	count=counter;
+	word=arr[i];
+}
+}
+}
+return word;
+}
+
